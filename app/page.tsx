@@ -44,7 +44,7 @@ export default function Home() {
       <Header />
       
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out">
         {/* Fixed Background Image for all sections */}
         <div 
           className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
