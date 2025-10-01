@@ -6,6 +6,16 @@ import { useRouter } from 'next/navigation'
 import AnimatedSection from '../../components/AnimatedSection'
 import SectionTransition from '../../components/SectionTransition'
 
+// 日付フォーマット関数
+const formatDate = (dateString: string) => {
+  try {
+    const date = new Date(dateString)
+    return date.toLocaleDateString('ja-JP', { year: 'numeric', month: 'long', day: 'numeric' })
+  } catch {
+    return dateString
+  }
+}
+
 export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<'news' | 'blog'>('news')
   const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([])
