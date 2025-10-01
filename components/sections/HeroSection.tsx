@@ -57,15 +57,15 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
       
-      {/* CTA Buttons - Bottom Right */}
-      <div className="absolute bottom-8 right-8 flex flex-row gap-4 z-20">
+      {/* CTA Buttons - Responsive positioning */}
+      <div className="absolute bottom-6 sm:bottom-8 left-4 right-4 sm:left-auto sm:right-8 flex flex-col sm:flex-row gap-3 sm:gap-4 z-20">
         <AnimatedSection animation="fadeInUp" delay={2000}>
           <a
             href="#services"
-            className="group inline-flex items-center justify-center px-6 py-3 bg-red-600/90 backdrop-blur-sm text-white font-semibold rounded-none hover:bg-red-700 transition-all duration-300 text-sm hover:scale-105 transform border-2 border-red-500 hover:border-red-400 shadow-xl hover:shadow-2xl"
+            className="group inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-red-600/90 backdrop-blur-sm text-white font-semibold rounded-none hover:bg-red-700 transition-all duration-300 text-xs sm:text-sm hover:scale-105 transform border-2 border-red-500 hover:border-red-400 shadow-xl hover:shadow-2xl w-full sm:w-auto"
           >
             <span className="group-hover:animate-pulse">What we do</span>
-            <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </a>
@@ -74,10 +74,10 @@ const HeroSection: React.FC = () => {
         <AnimatedSection animation="fadeInUp" delay={2200}>
           <a
             href="#contact"
-            className="group inline-flex items-center justify-center px-6 py-3 bg-white/90 backdrop-blur-sm text-red-600 font-semibold rounded-none border-2 border-white/80 hover:bg-white hover:border-white transition-all duration-300 text-sm hover:scale-105 transform shadow-xl hover:shadow-2xl"
+            className="group inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-white/90 backdrop-blur-sm text-red-600 font-semibold rounded-none border-2 border-white/80 hover:bg-white hover:border-white transition-all duration-300 text-xs sm:text-sm hover:scale-105 transform shadow-xl hover:shadow-2xl w-full sm:w-auto"
           >
             <span className="group-hover:animate-pulse">お問い合わせ</span>
-            <svg className="w-4 h-4 ml-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </a>
@@ -86,9 +86,9 @@ const HeroSection: React.FC = () => {
       
       {/* Flowing MOGCIA Text Animation - Bottom Quarter */}
       <div className="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden pointer-events-none z-5">
-        <div className="absolute bottom-8 w-full">
+        <div className="absolute bottom-4 sm:bottom-8 w-full">
           <div className="animate-[flowLeft_30s_linear_infinite] whitespace-nowrap">
-            <span className="text-8xl md:text-9xl font-black tracking-widest" style={{
+            <span className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-widest" style={{
               background: 'linear-gradient(to right, #dc2626, #f87171, #ffffff)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',

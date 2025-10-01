@@ -62,16 +62,16 @@ export default function Home() {
         <ServicesSection />
         
         {/* Values Section - MOGCIA に込めた想い */}
-        <section className="py-24 relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)' }}>
-          <div className="w-full px-6 sm:px-8 lg:px-12 relative z-10">
-            <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6 animate-fade-in-up">MOGCIA に込めた想い</h2>
-                <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        <section className="py-12 sm:py-16 md:py-24 relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)' }}>
+          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 animate-fade-in-up">MOGCIA に込めた想い</h2>
+                <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
                   MOGCIA の頭文字には、私たちが大切にしている 6 つの価値が込められています。
                 </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
               <AnimatedSection animation="scaleIn" delay={100} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
                 <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">M</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Mission</h3>
@@ -112,33 +112,35 @@ export default function Home() {
         </section>
 
         {/* Philosophy Section - 私たちの理念 */}
-        <section className="py-24 relative bg-white">
-          <div className="w-full px-6 sm:px-8 lg:px-12">
+        <section className="py-12 sm:py-16 md:py-24 relative bg-white">
+          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12">
             
             {/* Header */}
-            <div className="text-center mb-20">
+            <div className="text-center mb-10 sm:mb-16 md:mb-20">
               <AnimatedSection animation="fadeInUp" delay={200}>
-                <div className="inline-flex items-center px-6 py-3 bg-red-100 text-red-600 text-sm font-medium rounded-full mb-6">
-                  <div className="w-2 h-2 bg-red-600 rounded-full mr-3 animate-pulse"></div>
+                <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-red-100 text-red-600 text-xs sm:text-sm font-medium rounded-full mb-4 sm:mb-6">
+                  <div className="w-2 h-2 bg-red-600 rounded-full mr-2 sm:mr-3 animate-pulse"></div>
                   OUR PHILOSOPHY
                 </div>
-                <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 leading-tight px-4">
                   私たちの理念
                 </h2>
-                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  2023年11月の設立から現在まで、私たちは一貫して<br />
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
+                  2023年11月の設立から現在まで、私たちは一貫して
+                  <span className="hidden sm:inline"><br /></span>
+                  <span className="sm:hidden"> </span>
                   AI・デジタル技術で企業の未来を創造することを使命として歩んできました
                 </p>
               </AnimatedSection>
             </div>
 
             {/* Philosophy Cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 md:mb-20">
               {/* Mission Card */}
               <AnimatedSection animation="fadeInUp" delay={300}>
                 <div className="group relative bg-gradient-to-br from-red-500 to-red-600 rounded-none overflow-hidden shadow-2xl hover:shadow-red-500/25 transition-all duration-700 transform hover:-translate-y-4">
                   <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-red-700/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative p-8 text-white">
+                  <div className="relative p-6 sm:p-8 text-white">
                     <div className="flex items-center mb-6">
                       <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-none flex items-center justify-center mr-4">
                         <div className="w-8 h-8 bg-white/30 rounded-sm"></div>
@@ -172,7 +174,7 @@ export default function Home() {
               <AnimatedSection animation="fadeInUp" delay={400}>
                 <div className="group relative bg-gradient-to-br from-blue-500 to-blue-600 rounded-none overflow-hidden shadow-2xl hover:shadow-blue-500/25 transition-all duration-700 transform hover:-translate-y-4">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-blue-700/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative p-8 text-white">
+                  <div className="relative p-6 sm:p-8 text-white">
                     <div className="flex items-center mb-6">
                       <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-none flex items-center justify-center mr-4">
                         <div className="w-8 h-8 bg-white/30 rounded-sm"></div>
@@ -206,7 +208,7 @@ export default function Home() {
               <AnimatedSection animation="fadeInUp" delay={500}>
                 <div className="group relative bg-gradient-to-br from-green-500 to-green-600 rounded-none overflow-hidden shadow-2xl hover:shadow-green-500/25 transition-all duration-700 transform hover:-translate-y-4">
                   <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-green-700/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative p-8 text-white">
+                  <div className="relative p-6 sm:p-8 text-white">
                     <div className="flex items-center mb-6">
                       <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-none flex items-center justify-center mr-4">
                         <div className="w-8 h-8 bg-white/30 rounded-sm"></div>

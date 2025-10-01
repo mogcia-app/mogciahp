@@ -256,7 +256,7 @@ export default function About() {
               </AnimatedSection>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-20">
               {[
                 { letter: "M", title: "Mission", description: "使命を果たす" },
                 { letter: "O", title: "Originality", description: "独創性を追求" },
