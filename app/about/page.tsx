@@ -15,7 +15,7 @@ export default function About() {
       <Header />
       
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col bg-white">
+      <div className="flex-1 flex flex-col bg-white lg:ml-64">
         <ScrollProgress />
         <StableITRipple />
         

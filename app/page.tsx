@@ -44,7 +44,7 @@ export default function Home() {
       <Header />
       
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out">
+      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out lg:ml-64">
         
         <ScrollProgress />
         <StableITRipple />
@@ -52,7 +52,7 @@ export default function Home() {
         <main className="relative z-10 flex-1">
           <HeroSection />
           
-          {/* Concept Section - リンナイ青山風 */}
+          {/* Concept Section -*/}
           <section className="py-20 sm:py-24 md:py-32 bg-white">
             <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
               <div className="text-center mb-16">
