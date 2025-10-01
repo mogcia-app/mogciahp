@@ -50,7 +50,7 @@ export default function Contact() {
                 CONTACT
               </div>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-gray-300 mb-6 sm:mb-8 leading-tight tracking-wider drop-shadow-lg">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-thin text-black mb-6 sm:mb-8 leading-tight tracking-wider drop-shadow-lg">
                 お問い合わせ
               </h1>
               

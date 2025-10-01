@@ -37,7 +37,7 @@ export default function Philosophy() {
                   <div className="w-2 h-2 bg-gray-500 rounded-full mr-2 sm:mr-3"></div>
                   企業理念
                 </div>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-gray-300 mb-4 sm:mb-6 leading-tight tracking-wider drop-shadow-lg">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-black mb-4 sm:mb-6 leading-tight tracking-wider drop-shadow-lg">
                   私たちの想い
               </h1>
                 <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 sm:mb-8 leading-relaxed font-light drop-shadow-md">
