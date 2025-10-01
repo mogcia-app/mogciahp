@@ -49,100 +49,78 @@ const Header: React.FC = () => {
       >
         <div className="flex flex-col h-full">
           {/* Logo Section */}
-          <div className="p-6 border-b border-gray-200">
+          <div className="p-8 border-b border-gray-200">
             <Link href="/" className="block" onClick={closeSidebar}>
-              <video
-                className="h-12 w-auto hover:opacity-80 transition-opacity duration-200 mx-auto lg:mx-0"
-                style={{ 
-                  mixBlendMode: 'multiply',
-                  filter: 'brightness(1.1) contrast(1.2)'
-                }}
-                autoPlay
-                muted
-                playsInline
-              >
-                <source src="/images/MoG.MP4" type="video/mp4" />
-              </video>
+              <div className="text-center lg:text-left">
+                <h1 className="text-2xl font-bold text-gray-900 tracking-wider">
+                  MOGCIA
+                </h1>
+                <p className="text-sm text-gray-600 mt-1 tracking-wide">
+                  株式会社MOGCIA
+                </p>
+              </div>
             </Link>
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex-1 overflow-y-auto py-6">
-            <div className="flex flex-col space-y-2 px-4">
+          <nav className="flex-1 overflow-y-auto py-8">
+            <div className="flex flex-col space-y-1 px-6">
               <Link 
                 href="/philosophy" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
                 企業理念
               </Link>
               <Link 
                 href="/services" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
                 サービス一覧
               </Link>
               <Link 
                 href="/social" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
                 社会への取り組み
               </Link>
               <Link 
                 href="/partners" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6" />
-                </svg>
                 パートナー制度
               </Link>
               <Link 
                 href="/about" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
                 会社概要
               </Link>
               <Link 
                 href="/contact" 
-                className="flex items-center px-4 py-3 text-gray-800 hover:text-red-600 hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
                 onClick={closeSidebar}
               >
-                <svg className="w-5 h-5 mr-3 text-gray-400 group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
                 お問い合わせ
               </Link>
             </div>
           </nav>
 
           {/* CTA Section */}
-          <div className="border-t border-gray-200 p-6">
+          <div className="border-t border-gray-200 p-8">
             <Link
               href="/contact"
-              className="block w-full bg-red-600 hover:bg-red-700 text-white text-center px-6 py-3 rounded-lg text-base font-medium transition-colors duration-200 shadow-lg hover:shadow-xl"
+              className="block w-full bg-gray-900 hover:bg-gray-800 text-white text-center px-6 py-4 text-sm font-medium transition-colors duration-200"
               onClick={closeSidebar}
             >
-              無料相談
+              お問い合わせ
             </Link>
-            <p className="text-xs text-gray-500 text-center mt-2">
-              お気軽にお問い合わせください
+            <p className="text-xs text-gray-500 text-center mt-3 leading-relaxed">
+              お気軽にご相談ください
             </p>
           </div>
         </div>
