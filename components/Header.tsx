@@ -58,11 +58,9 @@ const Header: React.FC = () => {
             <Link href="/" className="block" onClick={closeSidebar}>
               <div className="text-center lg:text-left">
                 <h1 className="text-xl font-bold text-gray-900 tracking-wider">
-                  MOGCIA
+                株式会社MOGCIA
                 </h1>
-                <p className="text-xs text-gray-600 mt-1 tracking-wide">
-                  株式会社MOGCIA
-                </p>
+              
               </div>
             </Link>
             
@@ -84,8 +82,8 @@ const Header: React.FC = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className={`overflow-y-auto py-6 transition-all duration-300 ease-in-out ${
-            isCollapsed ? 'h-0 overflow-hidden py-0' : 'h-auto flex-1'
+          <nav className={`transition-all duration-300 ease-in-out ${
+            isCollapsed ? 'h-0 overflow-hidden py-0' : 'flex-1 overflow-y-auto py-6'
           }`}>
             <div className="flex flex-col space-y-1 px-4">
               <Link 
