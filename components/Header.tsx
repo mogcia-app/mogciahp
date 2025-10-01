@@ -50,7 +50,7 @@ const Header: React.FC = () => {
       <div 
         className={`fixed top-0 left-0 bg-white shadow-2xl z-50 transform transition-all duration-300 ease-in-out ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
-        } lg:translate-x-0 lg:static lg:shadow-none lg:border-r lg:border-gray-200 w-64 max-w-[85vw] ${
+        } lg:translate-x-0 lg:static lg:shadow-none w-64 max-w-[85vw] ${
           isCollapsed ? 'h-auto' : 'h-full'
         }`}
       >
