@@ -58,12 +58,20 @@ const Header: React.FC = () => {
           {/* Logo Section */}
           <div className="p-6 border-b border-gray-200 flex items-center justify-between">
             <Link href="/" className="block" onClick={closeSidebar}>
+              {/* Expanded State */}
               <div className={`text-center lg:text-left transition-opacity duration-300 ${isCollapsed ? 'opacity-0 w-0 overflow-hidden' : 'opacity-100'}`}>
                 <h1 className="text-xl font-bold text-gray-900 tracking-wider">
                   MOGCIA
                 </h1>
                 <p className="text-xs text-gray-600 mt-1 tracking-wide">
                   株式会社MOGCIA
+                </p>
+              </div>
+              
+              {/* Collapsed State - Only Company Name */}
+              <div className={`text-center lg:text-left transition-opacity duration-300 ${isCollapsed ? 'opacity-100' : 'opacity-0 w-0 overflow-hidden'}`}>
+                <p className="text-xs text-gray-600 tracking-wide leading-tight">
+                  株式会社<br />MOGCIA
                 </p>
               </div>
             </Link>
