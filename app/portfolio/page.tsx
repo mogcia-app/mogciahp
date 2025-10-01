@@ -4,9 +4,9 @@ import ScrollProgress from '../../components/ScrollProgress'
 import StableITRipple from '../../components/StableITRipple'
 
 // Section Components for Portfolio page
-import CoffeeSection from '../../components/sections/CoffeeSection'
+// import CoffeeSection from '../../components/sections/CoffeeSection'
 import NewsSection from '../../components/sections/NewsSection'
-import WebDevSection from '../../components/sections/WebDevSection'
+// import WebDevSection from '../../components/sections/WebDevSection'
 
 export default function Portfolio() {
   return (
@@ -28,9 +28,9 @@ export default function Portfolio() {
       <StableITRipple />
       
       <main className="relative z-10 pt-20">
-        <CoffeeSection />
+        {/* <CoffeeSection /> */}
         <NewsSection />
-        <WebDevSection />
+        {/* <WebDevSection /> */}
       </main>
       
       <Footer />
