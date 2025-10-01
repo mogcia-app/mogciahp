@@ -31,34 +31,6 @@ const HeroSection: React.FC = () => {
           </p>
         </AnimatedSection>
       </div>
-      
-      {/* CTA Buttons */}
-      <div className="relative z-10 px-6 sm:px-8 lg:px-12 flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-        <AnimatedSection animation="fadeInUp" delay={500}>
-          <a
-            href="#services"
-            className="group inline-flex items-center justify-center px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 transform shadow-lg hover:shadow-xl"
-          >
-            <span>サービスを見る</span>
-            <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </AnimatedSection>
-        
-        <AnimatedSection animation="fadeInUp" delay={600}>
-          <a
-            href="#contact"
-            className="group inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg border-2 border-gray-300 hover:border-gray-400 transition-all duration-300 hover:scale-105 transform shadow-lg hover:shadow-xl"
-          >
-            <span>お問い合わせ</span>
-            <svg className="w-5 h-5 ml-2 group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </a>
-        </AnimatedSection>
-      </div>
-      
     </section>
   )
 }
