@@ -34,6 +34,8 @@ export interface NewsArticle {
   content?: string
   link?: string
   published: boolean
+  imageUrl?: string
+  imageAlt?: string
   createdAt?: Date
   updatedAt?: Date
 }
