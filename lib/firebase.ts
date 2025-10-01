@@ -30,7 +30,7 @@ export interface NewsArticle {
   id: string
   title: string
   date: string
-  type: 'PRESS RELEASE' | 'NEWS' | 'ANNOUNCEMENT'
+  type: 'PRESS RELEASE' | 'NEWS' | 'ANNOUNCEMENT' | 'Coming soon'
   content?: string
   link?: string
   published: boolean

@@ -15,11 +15,11 @@ const StableITRipple: React.FC = () => {
   const lastRippleTime = React.useRef(0)
 
   const colors = [
-    'rgba(239, 68, 68, 0.6)',    // red-500
-    'rgba(220, 38, 38, 0.5)',    // red-600
-    'rgba(185, 28, 28, 0.4)',    // red-700
-    'rgba(248, 113, 113, 0.5)',  // red-400
-    'rgba(252, 165, 165, 0.4)',  // red-300
+    'rgba(107, 114, 128, 0.6)',  // gray-500
+    'rgba(75, 85, 99, 0.5)',     // gray-600
+    'rgba(55, 65, 81, 0.4)',     // gray-700
+    'rgba(156, 163, 175, 0.5)',  // gray-400
+    'rgba(209, 213, 219, 0.4)',  // gray-300
   ]
 
   useEffect(() => {
