@@ -39,81 +39,63 @@ export default function Home() {
     fetchBlogPosts()
   }, [])
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex bg-white">
       {/* Sidebar */}
       <Header />
       
       {/* Main Content Area */}
       <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out">
-        {/* Fixed Background Image for all sections */}
-        <div 
-          className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(/images/istockphoto-876010626-1024x1024.jpg)',
-            backgroundAttachment: 'fixed',
-            zIndex: -1,
-            filter: 'brightness(0.95) contrast(1.1) saturate(1.0)',
-            opacity: 0.3
-          }}
-        />
         
         <ScrollProgress />
         <StableITRipple />
         
         <main className="relative z-10 flex-1">
           <HeroSection />
+          
+          {/* Concept Section - リンナイ青山風 */}
+          <section className="py-20 sm:py-24 md:py-32 bg-white">
+            <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+                  Echoes of Innovation
+                </h2>
+                <p className="text-lg sm:text-xl text-gray-600 font-light leading-relaxed max-w-4xl mx-auto">
+                  イノベーションは移ろう。
+                </p>
+              </div>
+              
+              <div className="max-w-5xl mx-auto">
+                <div className="space-y-8 text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
+                  <p>
+                    技術を構成するデータやアルゴリズムは常に進化しており、
+                    私たちはその進化の速度を「デジタル変革」として感じとる。
+                  </p>
+                  <p>
+                    イノベーションはこの進化によって変化する。
+                    この企業は多様な人々が集い、交流していくことによって、
+                    技術が巡り伝導していく場所。
+                  </p>
+                  <p>
+                    そしてここで伝えられた技術は、
+                    他の場所へと移り、新たなる価値が創造されていく。
+                  </p>
+                  <p>
+                    物事は無常である。
+                    全てのものは不完全であり、永続的なものはない。
+                  </p>
+                  <p>
+                    だからこそ私たちは常に行動し、
+                    新たな美しい価値を創造していく。
+                    新たな技術を生み出し、
+                    その技術を未来へとつないでいく。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
         <WhatWeDoSection />
         <ServicesSection />
-        
-        {/* Values Section - MOGCIA に込めた想い */}
-        <section className="py-12 sm:py-16 md:py-24 relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.02)' }}>
-          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
-            <div className="text-center mb-8 sm:mb-12 md:mb-16">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 animate-fade-in-up">MOGCIA に込めた想い</h2>
-                <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-                  MOGCIA の頭文字には、私たちが大切にしている 6 つの価値が込められています。
-                </p>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-12">
-              <AnimatedSection animation="scaleIn" delay={100} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">M</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Mission</h3>
-                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">事業の軸を共に描く</p>
-                </AnimatedSection>
-            
-              <AnimatedSection animation="scaleIn" delay={200} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">O</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Optimization</h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">価値を最大化する仕組み</p>
-              </AnimatedSection>
-              
-              <AnimatedSection animation="scaleIn" delay={300} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">G</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Growth</h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">企業と共に成長する</p>
-              </AnimatedSection>
-              
-              <AnimatedSection animation="scaleIn" delay={400} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">C</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Consulting</h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">課題を捉え戦略を築く</p>
-              </AnimatedSection>
-              
-              <AnimatedSection animation="scaleIn" delay={500} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">I</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Intelligence</h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">AIで意思決定支援</p>
-              </AnimatedSection>
-              
-              <AnimatedSection animation="scaleIn" delay={600} className="group text-center p-6 rounded-none hover:bg-white transition-all duration-500 hover:shadow-lg hover:scale-105 transform">
-                <div className="text-6xl font-bold text-red-600 mb-4 group-hover:animate-bounce">A</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">Advancement</h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors duration-300">未来へ進化を導く</p>
-              </AnimatedSection>
-            </div>
-          </div>
-        </section>
 
         {/* Philosophy Section - 私たちの理念 */}
         <section className="py-12 sm:py-16 md:py-24 relative bg-white">
