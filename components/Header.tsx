@@ -84,8 +84,8 @@ const Header: React.FC = () => {
           </div>
 
           {/* Navigation Links */}
-          <nav className={`flex-1 overflow-y-auto py-6 transition-all duration-300 ease-in-out ${
-            isCollapsed ? 'max-h-0 overflow-hidden' : 'max-h-full'
+          <nav className={`overflow-y-auto py-6 transition-all duration-300 ease-in-out ${
+            isCollapsed ? 'h-0 overflow-hidden py-0' : 'h-auto flex-1'
           }`}>
             <div className="flex flex-col space-y-1 px-4">
               <Link 
@@ -134,8 +134,8 @@ const Header: React.FC = () => {
           </nav>
 
           {/* CTA Section */}
-          <div className={`border-t border-gray-200 p-6 transition-all duration-300 ease-in-out ${
-            isCollapsed ? 'max-h-0 overflow-hidden p-0' : 'max-h-full'
+          <div className={`border-t border-gray-200 transition-all duration-300 ease-in-out ${
+            isCollapsed ? 'h-0 overflow-hidden p-0 border-t-0' : 'h-auto p-6'
           }`}>
             <Link
               href="/contact"
