@@ -26,8 +26,8 @@ const HeroSection: React.FC = () => {
       {/* Main Content - Right Bottom */}
       <div className="absolute bottom-16 right-8 z-10 max-w-md">
         <AnimatedSection animation="fadeInUp" delay={300}>
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 leading-none tracking-tight drop-shadow-lg">
-            MOGCIA.inc
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-3 leading-none tracking-tight drop-shadow-lg">
+            <span className="font-bold">MOGCIA</span><span className="font-light">.inc</span>
           </h1>
           <div className="max-w-xs">
             <p className="text-xs sm:text-sm md:text-base text-white/90 mb-2 leading-relaxed font-light drop-shadow-md">

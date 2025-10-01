@@ -42,12 +42,11 @@ const TypingTitle: React.FC<TypingTitleProps> = ({
 
   return (
     <div className="flex items-center">
-      <span className="text-4xl sm:text-5xl md:text-6xl font-light text-gray-900 mr-4">
+      <span className="text-4xl sm:text-5xl md:text-6xl font-thin text-gray-900 mr-4 tracking-wider">
         {prefix}
       </span>
-      <span className="text-4xl sm:text-5xl md:text-6xl font-light text-gray-900">
-        {displayedText}
-        <span className="animate-pulse">|</span>
+      <span className="text-4xl sm:text-5xl md:text-6xl text-gray-900 tracking-wider">
+        <span className="font-bold">MOGCIA</span><span className="font-thin">の想い</span>
       </span>
     </div>
   )

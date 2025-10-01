@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Mogcia HP',
-  description: 'Next.js + TypeScript + Tailwind CSS で構築されたモダンなウェブアプリケーション',
+  title: 'MOGCIA - AI・デジタル技術で企業の未来を創造する',
+  description: 'AI・デジタル技術で企業の未来を創造するMOGCIA。スタートアップから大企業まで、それぞれの企業文化とビジョンに寄り添い、最適なデジタルソリューションを提供するパートナーとして、技術の先にある人と企業の豊かな未来を共に創造します。',
 }
 
 export default function RootLayout({
