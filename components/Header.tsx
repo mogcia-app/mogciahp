@@ -53,6 +53,7 @@ const Header: React.FC = () => {
         } lg:translate-x-0 lg:shadow-none w-64 max-w-[85vw] ${
           isCollapsed ? 'h-auto' : 'h-full'
         }`}
+        style={{ zIndex: 60 }}
       >
         <div className={`flex flex-col transition-all duration-300 ease-in-out ${
           isCollapsed ? 'h-auto' : 'h-full'
@@ -125,13 +126,7 @@ const Header: React.FC = () => {
               >
                 会社概要
               </Link>
-              <Link 
-                href="/contact" 
-                className="text-sm font-medium text-gray-700 hover:text-gray-900 py-3 transition-colors duration-200 border-l-2 border-transparent hover:border-gray-300 pl-4"
-                onClick={closeSidebar}
-              >
-                お問い合わせ
-              </Link>
+             
             </div>
           </nav>
 

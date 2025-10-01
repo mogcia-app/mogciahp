@@ -6,6 +6,7 @@ const HeroSection: React.FC = () => {
     <section 
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
+      style={{ zIndex: 10 }}
     >
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
@@ -19,22 +20,20 @@ const HeroSection: React.FC = () => {
           <source src="/videos/istockphoto-1398766612-640_adpp_is.mp4" type="video/mp4" />
         </video>
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
       
-      {/* Main Content */}
-      <div className="relative z-10 px-6 sm:px-8 lg:px-12 text-center max-w-6xl mx-auto">
+      {/* Main Content - Right Bottom */}
+      <div className="absolute bottom-16 right-8 z-10 max-w-md">
         <AnimatedSection animation="fadeInUp" delay={300}>
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-light text-white mb-8 leading-none tracking-tight drop-shadow-lg">
-            MOGCIA
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 leading-none tracking-tight drop-shadow-lg">
+            MOGCIA.inc
           </h1>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-6 leading-relaxed font-light drop-shadow-md">
+          <div className="max-w-xs">
+            <p className="text-xs sm:text-sm md:text-base text-white/90 mb-2 leading-relaxed font-light drop-shadow-md">
               AI・デジタル技術で企業の未来を創造する
             </p>
-            <p className="text-base sm:text-lg text-white/80 leading-relaxed font-light drop-shadow-md">
-              お客様一人ひとりに寄り添った柔軟なサービスを提供します
-            </p>
+            
           </div>
         </AnimatedSection>
       </div>

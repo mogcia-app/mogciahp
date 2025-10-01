@@ -45,7 +45,7 @@ export default function Home() {
       <Header />
       
       {/* Main Content Area */}
-      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out lg:ml-64">
+      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out">
         
         <ScrollProgress />
         <StableITRipple />
