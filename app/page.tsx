@@ -7,6 +7,7 @@ import ScrollProgress from '../components/ScrollProgress'
 import StableITRipple from '../components/StableITRipple'
 import AnimatedSection from '../components/AnimatedSection'
 import CounterAnimation from '../components/CounterAnimation'
+import TypingTitle from '../components/TypingTitle'
 
 // Section Components
 import HeroSection from '../components/sections/HeroSection'
@@ -55,39 +56,32 @@ export default function Home() {
           {/* Concept Section -*/}
           <section className="py-20 sm:py-24 md:py-32 bg-white">
             <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                  Echoes of Innovation
-                </h2>
-                <p className="text-lg sm:text-xl text-gray-600 font-light leading-relaxed max-w-4xl mx-auto">
-                  イノベーションは移ろう。
+              <div className="mb-16">
+                <div className="mb-8">
+                  <TypingTitle 
+                    text="MOGCIAの想い" 
+                    prefix="ー" 
+                    speed={150} 
+                    delay={1000}
+                  />
+                </div>
+                <p className="text-lg sm:text-xl text-gray-600 font-light leading-relaxed max-w-4xl">
+                  AI・デジタル技術で企業の未来を創造する
                 </p>
               </div>
               
               <div className="max-w-5xl mx-auto">
-                <div className="space-y-8 text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
+                <div className="space-y-6 text-lg sm:text-xl text-gray-700 leading-relaxed font-light">
                   <p>
-                    技術を構成するデータやアルゴリズムは常に進化しており、
-                    私たちはその進化の速度を「デジタル変革」として感じとる。
+                    私たちは、テクノロジーの力で企業の可能性を解き放ち、
+                    持続可能な成長を実現するパートナーです。
                   </p>
                   <p>
-                    イノベーションはこの進化によって変化する。
-                    この企業は多様な人々が集い、交流していくことによって、
-                    技術が巡り伝導していく場所。
+                    スタートアップから大企業まで、それぞれの企業文化と
+                    ビジョンに寄り添い、最適なデジタルソリューションを提供します。
                   </p>
                   <p>
-                    そしてここで伝えられた技術は、
-                    他の場所へと移り、新たなる価値が創造されていく。
-                  </p>
-                  <p>
-                    物事は無常である。
-                    全てのものは不完全であり、永続的なものはない。
-                  </p>
-                  <p>
-                    だからこそ私たちは常に行動し、
-                    新たな美しい価値を創造していく。
-                    新たな技術を生み出し、
-                    その技術を未来へとつないでいく。
+                    技術の先にある、人と企業の豊かな未来を共に創造していきます。
                   </p>
                 </div>
               </div>
