@@ -39,25 +39,29 @@ export default function Home() {
     fetchBlogPosts()
   }, [])
   return (
-    <div className="min-h-screen relative">
-      {/* Fixed Background Image for all sections */}
-      <div 
-        className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-              style={{
-          backgroundImage: 'url(/images/istockphoto-876010626-1024x1024.jpg)',
-          backgroundAttachment: 'fixed',
-          zIndex: -1,
-          filter: 'brightness(0.95) contrast(1.1) saturate(1.0)',
-          opacity: 0.3
-        }}
-      />
-      
+    <div className="min-h-screen flex">
+      {/* Sidebar */}
       <Header />
-      <ScrollProgress />
-      <StableITRipple />
       
-      <main className="relative z-10">
-        <HeroSection />
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col">
+        {/* Fixed Background Image for all sections */}
+        <div 
+          className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/images/istockphoto-876010626-1024x1024.jpg)',
+            backgroundAttachment: 'fixed',
+            zIndex: -1,
+            filter: 'brightness(0.95) contrast(1.1) saturate(1.0)',
+            opacity: 0.3
+          }}
+        />
+        
+        <ScrollProgress />
+        <StableITRipple />
+        
+        <main className="relative z-10 flex-1">
+          <HeroSection />
         <WhatWeDoSection />
         <ServicesSection />
         
@@ -412,10 +416,11 @@ export default function Home() {
           </div>
         </section>
 
-        <CTASection />
-      </main>
-      
-      <Footer />
+          <CTASection />
+        </main>
+        
+        <Footer />
+      </div>
     </div>
   )
 }

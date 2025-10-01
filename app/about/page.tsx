@@ -10,13 +10,16 @@ import SectionTransition from '../../components/SectionTransition'
 
 export default function About() {
   return (
-    <div className="min-h-screen relative bg-white">
-      
+    <div className="min-h-screen flex">
+      {/* Sidebar */}
       <Header />
-      <ScrollProgress />
-      <StableITRipple />
       
-      <main className="relative z-10">
+      {/* Main Content Area */}
+      <div className="flex-1 flex flex-col bg-white">
+        <ScrollProgress />
+        <StableITRipple />
+        
+        <main className="relative z-10 flex-1">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background Image */}
@@ -457,9 +460,10 @@ export default function About() {
             </div>
           </div>
         </SectionTransition>
-      </main>
-      
-      <Footer />
+        </main>
+        
+        <Footer />
+      </div>
     </div>
   )
 }
