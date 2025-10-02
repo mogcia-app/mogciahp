@@ -5,8 +5,8 @@ const HeroSection: React.FC = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-16"
-      style={{ zIndex: 10 }}
+      className="relative min-h-screen lg:min-h-screen flex items-center justify-center bg-white overflow-hidden pt-16"
+      style={{ zIndex: 10, minHeight: '100vh' }}
     >
       {/* Image Background */}
       <div className="absolute inset-0 w-full h-full">
@@ -24,8 +24,8 @@ const HeroSection: React.FC = () => {
           <img
             src="/images/009876.png"
             alt="AI・デジタル技術で企業の未来を創造"
-            className="w-full h-full object-contain"
-            style={{ objectPosition: 'center center' }}
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center center', minHeight: '120vh' }}
           />
         </div>
        
