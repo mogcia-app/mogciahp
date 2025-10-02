@@ -44,55 +44,43 @@ export default function NewsSection() {
   ]
 
   return (
-    <section className="py-16 sm:py-20 bg-gray-50">
+    <section className="py-8 sm:py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection animation="fadeInUp">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-gray-900 mb-4 tracking-wide">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-lg sm:text-xl font-light text-gray-900 mb-4 tracking-wide">
               NEWS
             </h2>
             <div className="w-16 h-0.5 bg-black mx-auto"></div>
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="space-y-4 sm:space-y-6">
           {newsArticles.map((article, index) => (
             <AnimatedSection key={article.id} animation="fadeInUp" delay={index * 100}>
-              <div className="bg-white rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden group">
-                <div className="p-6 sm:p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-xs font-medium px-2 py-1 text-gray-600 bg-gray-100">
-                      {article.type}
-                    </span>
-                    <span className="text-xs text-gray-500">{article.date}</span>
-                  </div>
-                  
-                  <h3 className="text-lg sm:text-xl font-medium text-gray-900 mb-3 leading-tight group-hover:text-gray-700 transition-colors">
-                    {article.title}
-                  </h3>
-                  
-                  {article.content && (
-                    <p 
-                      className="text-sm text-gray-600 leading-relaxed font-light"
-                      dangerouslySetInnerHTML={{ __html: article.content }}
-                    />
-                  )}
+              <div className="bg-white border border-gray-200 rounded-sm p-4 sm:p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-medium px-2 py-1 text-gray-600 bg-gray-100">
+                    {article.type}
+                  </span>
+                  <span className="text-xs text-gray-500">{article.date}</span>
                 </div>
+                
+                <h3 className="text-sm sm:text-base font-medium text-gray-900 mb-3 leading-tight">
+                  {article.title}
+                </h3>
+                
+                {article.content && (
+                  <p 
+                    className="text-sm text-gray-600 leading-relaxed font-light"
+                    dangerouslySetInnerHTML={{ __html: article.content }}
+                  />
+                )}
               </div>
             </AnimatedSection>
           ))}
         </div>
 
-        <AnimatedSection animation="fadeInUp" delay={400}>
-          <div className="text-center mt-12 sm:mt-16">
-            <a 
-              href="/blog" 
-              className="inline-block bg-black text-white text-sm px-6 py-3 rounded-sm hover:bg-gray-800 transition-colors duration-200"
-            >
-              すべてのニュースを見る
-            </a>
-          </div>
-        </AnimatedSection>
       </div>
     </section>
   )

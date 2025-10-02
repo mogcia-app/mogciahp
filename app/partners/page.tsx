@@ -153,7 +153,7 @@ export default function Partners() {
                     </h2>
                     <div className="w-24 h-px bg-gray-300 mx-auto mb-4"></div>
                     <p className="text-base sm:text-lg text-gray-500 font-light tracking-wide max-w-4xl mx-auto">
-                      パートナーシップの構築から成功まで、ステップバイステップでサポートします
+                      パートナーシップの構築から成功まで<br />ステップバイステップでサポートします
                     </p>
                   </AnimatedSection>
                 </div>

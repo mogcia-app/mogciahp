@@ -31,9 +31,9 @@ export default function Home() {
           <HeroSection />
           
                  {/* Concept Section -*/}
-                 <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white mt-32 sm:mt-40 md:mt-48 lg:mt-56 xl:mt-64">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:ml-24">
-              <div className="mb-12 sm:mb-16 relative">
+                 <section className="py-8 sm:py-12 md:py-16 bg-white mt-16 sm:mt-20 md:mt-24">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+              <div className="mb-8 sm:mb-12 relative">
                 <div className="mb-6 sm:mb-8">
                     <TypingTitle 
                       text="MOGCIAの想い" 
@@ -42,9 +42,6 @@ export default function Home() {
                       delay={1000}
                   />
                 </div>
-                <p className="text-base sm:text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-4xl">
-                  AI・デジタル技術で企業の未来を創造する
-                </p>
                 
                 {/* 画像部分 - レスポンシブ対応 */}
                 <div className="absolute top-12 sm:top-16 right-0 hidden md:block">
@@ -60,17 +57,15 @@ export default function Home() {
               </div>
               
                     <div className="max-w-5xl mx-auto">
-                      <div className="space-y-6 sm:space-y-8 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
-                        <p className="text-xl sm:text-2xl md:text-3xl font-thin text-gray-800 leading-tight tracking-wide">
+                      <div className="space-y-8 sm:space-y-12 text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
+                        <p className="text-lg sm:text-xl md:text-2xl font-thin text-gray-800 leading-tight tracking-wide">
                           テクノロジーが切り拓く<br />
                           <span className="font-medium">企業の無限の可能性</span>
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light tracking-wide">
                         AI・デジタル技術で企業の未来を創造するパートナーとして<br />
-                        スタートアップから大企業まで<br />それぞれの企業文化とビジョンに寄り添い<br />
-                        </p>
-                        <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light italic tracking-wide">
-                          技術の先にある、人と企業の豊かな未来を共に<br />創造していきます。
+                        スタートアップから大企業まで、それぞれの企業文化とビジョンに寄り添い<br />
+                        技術の先にある、人と企業の豊かな未来を共に創造していきます。
                         </p>
                       </div>
                     </div>
