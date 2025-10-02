@@ -20,11 +20,11 @@ const HeroSection: React.FC = () => {
           <source src="/videos/istockphoto-1398766612-640_adpp_is.mp4" type="video/mp4" />
         </video>
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/70"></div>
+     
       </div>
       
-      {/* Main Content - Right Bottom */}
-      <div className="absolute bottom-16 right-8 z-10 max-w-md">
+      {/* Main Content - Center Bottom */}
+      <div className="absolute bottom-32 sm:bottom-40 md:bottom-48 lg:bottom-56 xl:bottom-64 left-1/2 transform -translate-x-1/2 z-10 max-w-md text-center">
         <AnimatedSection animation="fadeInUp" delay={300}>
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-3 leading-none tracking-tight drop-shadow-lg">
             <span className="font-bold">MOGCIA</span><span className="font-light">.inc</span>

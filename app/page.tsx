@@ -53,7 +53,7 @@ export default function Home() {
           <HeroSection />
           
                  {/* Concept Section -*/}
-                 <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white">
+                 <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 bg-white mt-32 sm:mt-40 md:mt-48 lg:mt-56 xl:mt-64">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 lg:ml-24">
               <div className="mb-12 sm:mb-16 relative">
                 <div className="mb-6 sm:mb-8">
@@ -76,7 +76,7 @@ export default function Home() {
                       alt="AI・デジタル技術で企業の未来を創造"
                       className="w-full h-auto shadow-xl"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  
                   </div>
                 </div>
               </div>

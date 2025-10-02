@@ -62,7 +62,7 @@ export default function MainServicesSection() {
                   <AnimatedSection animation="fadeInLeft" delay={200}>
                     <div className="relative w-full h-48 rounded-sm overflow-hidden">
                       <img
-                        src="/images/istockphoto-834741464-1024x1024.jpg"
+                        src="/images/2.jpg"
                         alt="Web Development"
                         className="w-full h-full object-cover"
                       />
@@ -124,7 +124,7 @@ export default function MainServicesSection() {
                   <AnimatedSection animation="fadeInLeft" delay={200}>
                     <div className="relative w-full h-48 rounded-sm overflow-hidden">
                       <img
-                        src="/images/istockphoto-2204337769-1024x1024.jpg"
+                        src="/images/1.jpg"
                         alt="SNS Marketing"
                         className="w-full h-full object-cover"
                       />
@@ -138,9 +138,12 @@ export default function MainServicesSection() {
                   <AnimatedSection animation="fadeInRight" delay={400}>
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">DIGITAL MARKETING</div>
                     <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">SNS運用支援</h3>
-                    <p className="text-sm text-gray-600 leading-relaxed font-light">
-                      SNS戦略の設計から運用、分析まで一貫してサポート。Instagram、YouTube、X、TikTokなど各プラットフォームの特性を活かした戦略的な運用で、フォロワー増加とエンゲージメント向上を実現します。
+                    <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
+                      SNS戦略の設計から運用、分析まで一貫してサポート。各プラットフォームの特性を活かした戦略的な運用で、フォロワー増加とエンゲージメント向上を実現します。
                     </p>
+                    <div className="text-xs text-gray-500">
+                      <span className="font-medium">対応SNS：</span>Instagram、X(旧Twitter)、TikTok、YouTube他
+                    </div>
                   </AnimatedSection>
                 </div>
               </div>
