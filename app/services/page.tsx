@@ -32,7 +32,7 @@ export default function Services() {
               <div 
                 className="w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: 'url(/images/istockphoto-997311532-1024x1024.jpg)'
+                  backgroundImage: 'url(/images/iStock-997311532.jpg)'
                 }}
               />
               {/* Overlay for better text readability */}

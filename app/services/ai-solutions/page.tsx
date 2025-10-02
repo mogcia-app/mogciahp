@@ -10,7 +10,7 @@ export default function AISolutionsPage() {
       <div 
         className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/istockphoto-876010626-1024x1024.jpg)',
+          backgroundImage: 'url(/images/iStock-997311532.jpg)',
           backgroundAttachment: 'fixed',
           zIndex: -1,
           filter: 'brightness(0.95) contrast(1.1) saturate(1.0)',
