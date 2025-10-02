@@ -88,11 +88,11 @@ export default function Home() {
                           <span className="font-medium">企業の無限の可能性</span>
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light tracking-wide">
-                          スタートアップから大企業まで、それぞれの企業文化とビジョンに寄り添い、<br className="hidden sm:block" />
+                          スタートアップから大企業まで<br />それぞれの企業文化とビジョンに寄り添い<br />
                           最適なデジタルソリューションを提供するパートナーとして。
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light italic tracking-wide">
-                          技術の先にある、人と企業の豊かな未来を共に創造していきます。
+                          技術の先にある、人と企業の豊かな未来を共に<br />創造していきます。
                         </p>
                       </div>
                     </div>

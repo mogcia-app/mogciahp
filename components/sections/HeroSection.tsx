@@ -17,14 +17,14 @@ const HeroSection: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/videos/istockphoto-1398766612-640_adpp_is.mp4" type="video/mp4" />
+          <source src="/videos/istockphoto-2167033466-640_adpp_is.mp4" type="video/mp4" />
         </video>
         {/* Overlay for better text readability */}
      
       </div>
       
-      {/* Main Content - Center Bottom */}
-      <div className="absolute bottom-32 sm:bottom-40 md:bottom-48 lg:bottom-56 xl:bottom-64 left-1/2 transform -translate-x-1/2 z-10 max-w-md text-center">
+      {/* Main Content - Bottom Right */}
+      <div className="absolute bottom-8 sm:bottom-12 md:bottom-16 lg:bottom-20 xl:bottom-24 right-4 sm:right-6 md:right-8 lg:right-12 xl:right-16 z-10 max-w-sm text-right">
         <AnimatedSection animation="fadeInUp" delay={300}>
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-3 leading-none tracking-tight drop-shadow-lg">
             <span className="font-bold">MOGCIA</span><span className="font-light">.inc</span>
