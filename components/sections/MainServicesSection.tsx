@@ -25,13 +25,15 @@ export default function MainServicesSection() {
           {/* Signal. Section */}
           <div className="mb-12 sm:mb-16">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
+              <div className="absolute -top-2 -left-2 w-4 h-4" style={{backgroundColor: '#ff8a15'}}></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 {/* Text Section */}
                 <div className="order-2 lg:order-1">
                   <AnimatedSection animation="fadeInLeft" delay={200}>
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">AI SOLUTION</div>
-                    <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">Signal.（SNS運用AI）</h3>
+                    <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">
+                      <span className="font-bold">Signal</span><span style={{color: '#ff8a15'}}>.</span>（SNS運用AI）
+                    </h3>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
                       SNS運用90%自動化AI戦略ツール。<br />Instagram、YouTube、X、TikTokの4つのSNSを<br />AIが一括管理し、KPI逆算型PDCAで集客・売上アップを<br />実現します。
                     </p>
@@ -39,7 +41,8 @@ export default function MainServicesSection() {
                       href="https://www.sgnalapp.com/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-black text-white text-xs px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors duration-200"
+                      className="inline-block bg-white text-xs px-4 py-2 rounded-sm border-2 transition-colors duration-200"
+                      style={{borderColor: '#000000', color: '#000000'}}
                     >
                       公式HP
                     </a>
@@ -63,7 +66,7 @@ export default function MainServicesSection() {
           {/* Web Development Section */}
           <div className="mb-12 sm:mb-16">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
+              <div className="absolute -top-2 -left-2 w-4 h-4" style={{backgroundColor: '#00bfff'}}></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 {/* Image Section */}
                 <div className="order-1 lg:order-1">
@@ -91,7 +94,8 @@ export default function MainServicesSection() {
                       href="https://web-syb2.vercel.app/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-black text-white text-xs px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors duration-200"
+                      className="inline-block bg-white text-xs px-4 py-2 rounded-sm border-2 transition-colors duration-200"
+                      style={{borderColor: '#000000', color: '#000000'}}
                     >
                       公式HP
                     </a>
@@ -104,7 +108,7 @@ export default function MainServicesSection() {
           {/* MOGCIA Coffee Section */}
           <div className="mb-12 sm:mb-16">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
+              <div className="absolute -top-2 -left-2 w-4 h-4" style={{backgroundColor: '#cc0000'}}></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 {/* Text Section */}
                 <div className="order-2 lg:order-1">
@@ -118,7 +122,8 @@ export default function MainServicesSection() {
                       href="https://mogcia.official.ec/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-black text-white text-xs px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors duration-200"
+                      className="inline-block bg-white text-xs px-4 py-2 rounded-sm border-2 transition-colors duration-200"
+                      style={{borderColor: '#000000', color: '#000000'}}
                     >
                       公式HP
                     </a>
@@ -141,7 +146,7 @@ export default function MainServicesSection() {
           {/* SNS Marketing Section */}
           <div className="mb-12 sm:mb-16">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
+              <div className="absolute -top-2 -left-2 w-4 h-4" style={{backgroundColor: '#ff69b4'}}></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 {/* Image Section */}
                 <div className="order-1 lg:order-1">
@@ -172,7 +177,8 @@ export default function MainServicesSection() {
                       href="https://sns-gamma.vercel.app/" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-black text-white text-xs px-4 py-2 rounded-sm hover:bg-gray-800 transition-colors duration-200"
+                      className="inline-block bg-white text-xs px-4 py-2 rounded-sm border-2 transition-colors duration-200"
+                      style={{borderColor: '#000000', color: '#000000'}}
                     >
                       公式HP
                     </a>
@@ -185,7 +191,7 @@ export default function MainServicesSection() {
           {/* Enterprise AI Section */}
           <div className="mb-12 sm:mb-16">
             <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
-              <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
+              <div className="absolute -top-2 -left-2 w-4 h-4" style={{backgroundColor: '#000080'}}></div>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                 {/* Text Section */}
                 <div className="order-2 lg:order-1">

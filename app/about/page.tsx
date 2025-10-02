@@ -41,10 +41,10 @@ export default function About() {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-black mb-4 sm:mb-6 leading-tight tracking-wider drop-shadow-lg">
                   私たちについて
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 sm:mb-8 leading-relaxed font-light drop-shadow-md">
+                <p className="text-base sm:text-lg md:text-xl text-black mb-6 sm:mb-8 leading-relaxed font-light drop-shadow-md">
                   AI・デジタル技術で企業の未来を創造する
                 </p>
-                <p className="text-sm sm:text-base text-gray-500 mb-8 sm:mb-12 font-light drop-shadow-md">
+                <p className="text-sm sm:text-base text-black mb-8 sm:mb-12 font-light drop-shadow-md">
                   お客様一人ひとりに寄り添った柔軟なサービスを提供します
                 </p>
               </AnimatedSection>

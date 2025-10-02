@@ -48,11 +48,11 @@ export default function Services() {
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-black mb-4 sm:mb-6 leading-tight tracking-wider drop-shadow-lg">
                   サービス一覧
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 sm:mb-8 leading-relaxed font-light drop-shadow-md">
+                <p className="text-base sm:text-lg md:text-xl text-black mb-6 sm:mb-8 leading-relaxed font-light drop-shadow-md">
                   AI導入・SNS運用・Web制作・システム開発・卸販売で<br />
                   お客様のビジネス成長をサポートします
                 </p>
-                <p className="text-sm sm:text-base text-gray-500 mb-8 sm:mb-12 font-light drop-shadow-md">
+                <p className="text-sm sm:text-base text-black mb-8 sm:mb-12 font-light drop-shadow-md">
                   お客様一人ひとりに寄り添った柔軟なサービスを提供します
                 </p>
               </AnimatedSection>

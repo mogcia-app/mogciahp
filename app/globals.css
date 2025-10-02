@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    font-family: 'Noto Serif JP', 'Times New Roman', serif;
+  }
+}
+

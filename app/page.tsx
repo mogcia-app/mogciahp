@@ -1,4 +1,5 @@
 'use client'
+import { useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ScrollProgress from '../components/ScrollProgress'
@@ -6,6 +7,7 @@ import StableITRipple from '../components/StableITRipple'
 import AnimatedSection from '../components/AnimatedSection'
 import CounterAnimation from '../components/CounterAnimation'
 import TypingTitle from '../components/TypingTitle'
+import LoadingScreen from '../components/LoadingScreen'
 
 // Section Components
 import HeroSection from '../components/sections/HeroSection'
@@ -16,6 +18,15 @@ import NewsSection from '../components/sections/NewsSection'
 import CTASection from '../components/sections/CTASection'
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true)
+  
+  const handleLoadingComplete = () => {
+    setIsLoading(false)
+  }
+  if (isLoading) {
+    return <LoadingScreen onComplete={handleLoadingComplete} />
+  }
+
   return (
     <div className="min-h-screen flex bg-white">
       {/* Sidebar */}
