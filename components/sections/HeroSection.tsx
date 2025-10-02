@@ -14,6 +14,7 @@ const HeroSection: React.FC = () => {
           src="/images/istockphoto-2187782281-1024x1024.jpg"
           alt="AI・デジタル技術で企業の未来を創造"
           className="w-full h-full object-cover"
+          style={{ objectPosition: '20% center' }}
         />
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/30"></div>
