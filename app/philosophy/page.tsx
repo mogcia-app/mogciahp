@@ -76,12 +76,12 @@ export default function Philosophy() {
                   <div className="max-w-5xl mx-auto">
                     <div className="space-y-6 sm:space-y-8 text-base sm:text-lg text-gray-600 leading-relaxed font-light">
                       <p>
-                        私たちは、AI・デジタル技術を通じて企業の未来を創造することを使命としています。
+                        私たちは、AI・デジタル技術を通じて企業の未来を創造することを使命としています。<br />
                         お客様一人ひとりの課題に向き合い、最適なソリューションを提供することで、
                         持続的な成長と発展を実現します。
                       </p>
                       <p>
-                        技術は手段であり、目的ではありません。
+                        技術は手段であり、目的ではありません。<br />
                         私たちが大切にするのは、技術を通じて生まれる価値と、
                         それによって実現される人々の幸せです。
                       </p>
@@ -247,7 +247,7 @@ export default function Philosophy() {
                       </h2>
                       <div className="w-24 h-px bg-gray-300 mx-auto mb-4"></div>
                       <p className="text-base sm:text-lg text-gray-500 font-light tracking-wide max-w-4xl mx-auto">
-                        MOGCIAの頭文字には、私たちが大切にしている6つの価値が込められています
+                        MOGCIAの頭文字には<br />私たちが大切にしている6つの価値が<br />込められています
                       </p>
               </AnimatedSection>
             </div>
@@ -289,12 +289,12 @@ export default function Philosophy() {
                 <div className="bg-white border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-all duration-300 group relative">
                   <div className="absolute -top-2 -left-2 w-4 h-4 bg-black"></div>
                     <div className="text-center">
-                    <h2 className="text-2xl sm:text-3xl font-thin text-gray-900 mb-4 sm:mb-6 leading-tight tracking-wider">
+                    <h2 className="text-[20px] sm:text-[18px] font-thin text-gray-900 mb-4 sm:mb-6 leading-tight tracking-wider">
                       お気軽にお問い合わせください
                 </h2>
                     <div className="w-24 h-px bg-gray-300 mx-auto mb-4"></div>
                     <p className="text-sm sm:text-base text-gray-500 font-light tracking-wide mb-8 max-w-3xl mx-auto">
-                      AI・デジタル技術で企業の未来を創造するサービスについて、ご相談やご質問がございましたらお気軽にお問い合わせください。
+                      AI・デジタル技術で企業の未来を創造するサービスについて、ご相談やご質問がございましたら<br />お気軽にお問い合わせください。
                     </p>
                     <a
                       href="/contact"

@@ -33,7 +33,7 @@ export default function MainServicesSection() {
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">AI SOLUTION</div>
                     <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">Signal.（SNS運用AI）</h3>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
-                      SNS運用90%自動化AI戦略ツール。Instagram、YouTube、X、TikTokの4つのSNSをAIが一括管理し、KPI逆算型PDCAで集客・売上アップを実現します。
+                      SNS運用90%自動化AI戦略ツール。<br />Instagram、YouTube、X、TikTokの4つのSNSを<br />AIが一括管理し、KPI逆算型PDCAで集客・売上アップを<br />実現します。
                     </p>
                     <a 
                       href="https://www.sgnalapp.com/" 
@@ -85,7 +85,7 @@ export default function MainServicesSection() {
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">WEB SOLUTION</div>
                     <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">WEBサイト制作</h3>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
-                      モダンな技術スタックでWebサイトを構築し、継続的な改善をサポート。レスポンシブデザイン、SEO最適化、パフォーマンス向上まで、成果に直結するWebサイトを制作します。
+                      モダンな技術スタックでWebサイトを構築し<br />継続的な改善をサポート。<br />レスポンシブデザイン、SEO最適化、パフォーマンス向上まで、成果に直結するWebサイトを制作します。
                     </p>
                     <a 
                       href="https://web-syb2.vercel.app/" 
@@ -112,7 +112,7 @@ export default function MainServicesSection() {
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">COFFEE BUSINESS</div>
                     <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">MOGCIA Coffee</h3>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
-                      厳選された豆から淹れる高品質なコーヒーを提供。オフィスやイベントでのコーヒーサービス、コーヒー豆の卸販売まで、コーヒーを通じてビジネスの質を向上させます。
+                      厳選された豆から淹れる高品質なコーヒーを提供。オフィスやイベントでのコーヒーサービス<br />コーヒー豆の卸販売まで、コーヒーを通じてビジネスの質を向上させます。
                     </p>
                     <a 
                       href="https://mogcia.official.ec/" 
@@ -166,7 +166,7 @@ export default function MainServicesSection() {
                       SNS戦略の設計から運用、分析まで一貫してサポート。各プラットフォームの特性を活かした戦略的な運用で、フォロワー増加とエンゲージメント向上を実現します。
                     </p>
                     <div className="text-xs text-gray-500 mb-4">
-                      <span className="font-medium">対応SNS：</span>Instagram、X(旧Twitter)、TikTok、YouTube他
+                      <span className="font-medium">対応SNS：</span>Instagram、X(旧Twitter)、TikTok、YouTube
                     </div>
                     <a 
                       href="https://sns-gamma.vercel.app/" 
@@ -194,7 +194,7 @@ export default function MainServicesSection() {
                     <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">Enterprise AI（社内専用ツール）</h3>
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-blue-600 bg-blue-100 mb-4 inline-block">COMING SOON</div>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
-                      社内ドキュメント、規程、FAQ、議事録、顧客履歴など企業内のナレッジに最適化。きめ細かな権限管理と監査ログ、日本語業務文書チューニングを備え、提案書や報告書の下書き、契約書の観点チェック、社内FAQの即時回答を安全に実現します。
+                      社内ドキュメント、規程、FAQ、議事録、顧客履歴など企業内のナレッジに最適化。<br />きめ細かな権限管理と監査ログを備え、提案書や報告書の下書き、契約書の観点チェック、社内FAQの即時回答を安全に実現します。
                     </p>
                     <button 
                       disabled

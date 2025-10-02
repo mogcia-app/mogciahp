@@ -2,3 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+/* レスポンシブ文字サイズ設定 */
+@layer base {
+  html {
+    font-size: 14px; /* ベースサイズ */
+  }
+  
+  @media (min-width: 640px) {
+    html {
+      font-size: 15px; /* sm以上 */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; /* md以上 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    html {
+      font-size: 17px; /* lg以上 */
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    html {
+      font-size: 18px; /* xl以上 */
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    html {
+      font-size: 19px; /* 2xl以上 */
+    }
+  }
+}
+

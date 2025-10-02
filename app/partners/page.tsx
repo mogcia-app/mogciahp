@@ -77,7 +77,7 @@ export default function Partners() {
                       </h2>
                       <div className="w-24 h-px bg-gray-300 mx-auto mb-4"></div>
                       <p className="text-base sm:text-lg text-gray-500 font-light tracking-wide max-w-4xl mx-auto">
-                        お客様のビジネスモデルに最適なパートナーシップをご提案します
+                        お客様のビジネスモデルに最適な<br />パートナーシップをご提案します
                       </p>
                     </AnimatedSection>
                   </div>
@@ -89,7 +89,7 @@ export default function Partners() {
                         <h3 className="text-lg font-medium text-gray-900 mb-2 tracking-wide">技術パートナー</h3>
                         <div className="text-sm text-gray-500 font-light mb-4 tracking-wide">AI・DX技術で共創</div>
                         <p className="text-sm text-gray-600 font-light leading-relaxed mb-4">
-                          最新のAI技術やDXソリューションを共同開発し、お客様に革新的な価値を提供します。
+                          最新のAI技術やDXソリューションを共同開発し<br />お客様に革新的な価値を提供します。
                         </p>
                         <div className="space-y-1 text-xs text-gray-500">
                           <div>• 技術ノウハウの共有</div>
@@ -105,7 +105,7 @@ export default function Partners() {
                         <h3 className="text-lg font-medium text-gray-900 mb-2 tracking-wide">販売パートナー</h3>
                         <div className="text-sm text-gray-500 font-light mb-4 tracking-wide">事業拡大で共創</div>
                         <p className="text-sm text-gray-600 font-light leading-relaxed mb-4">
-                          お互いの強みを活かして、新規事業の創出や市場拡大を目指します。
+                          お互いの強みを活かし市場拡大を<br />目指します。
                         </p>
                         <div className="space-y-1 text-xs text-gray-500">
                           <div>• 新規事業の共同開発</div>
@@ -121,7 +121,7 @@ export default function Partners() {
                         <h3 className="text-lg font-medium text-gray-900 mb-2 tracking-wide">地域パートナー</h3>
                         <div className="text-sm text-gray-500 font-light mb-4 tracking-wide">地域活性化で共創</div>
                         <p className="text-sm text-gray-600 font-light leading-relaxed mb-4">
-                          地域の企業や団体と連携し、地域社会の発展に貢献します。
+                          地域の企業や団体と連携し<br />地域社会の発展に貢献します。
                         </p>
                         <div className="space-y-1 text-xs text-gray-500">
                           <div>• 地域での知名度向上</div>
@@ -148,7 +148,7 @@ export default function Partners() {
                       <div className="w-2 h-2 bg-gray-400 rounded-full mr-2 sm:mr-3"></div>
                       PARTNERSHIP PROCESS
                     </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-thin text-gray-900 mb-4 sm:mb-6 leading-tight tracking-wider">
+                    <h2 className="text-[20px] sm:text-[18px] md:text-[16px] font-thin text-gray-900 mb-4 sm:mb-6 leading-tight tracking-wider">
                       パートナーシップの流れ
                     </h2>
                     <div className="w-24 h-px bg-gray-300 mx-auto mb-4"></div>

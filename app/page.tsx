@@ -1,6 +1,4 @@
 'use client'
-
-import { useState, useEffect } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import ScrollProgress from '../components/ScrollProgress'
@@ -17,27 +15,7 @@ import MainServicesSection from '../components/sections/MainServicesSection'
 import NewsSection from '../components/sections/NewsSection'
 import CTASection from '../components/sections/CTASection'
 
-// Firebase imports
-import { getPublishedBlogPosts, BlogPost } from '../lib/firebase'
-
 export default function Home() {
-  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const fetchBlogPosts = async () => {
-      try {
-        const posts = await getPublishedBlogPosts()
-        setBlogPosts(posts.slice(0, 3)) // 最新3件のみ表示
-      } catch (error) {
-        console.error('Error fetching blog posts:', error)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchBlogPosts()
-  }, [])
   return (
     <div className="min-h-screen flex bg-white">
       {/* Sidebar */}
@@ -88,8 +66,8 @@ export default function Home() {
                           <span className="font-medium">企業の無限の可能性</span>
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light tracking-wide">
-                          スタートアップから大企業まで<br />それぞれの企業文化とビジョンに寄り添い<br />
-                          最適なデジタルソリューションを提供するパートナーとして。
+                        AI・デジタル技術で企業の未来を創造するパートナーとして<br />
+                        スタートアップから大企業まで<br />それぞれの企業文化とビジョンに寄り添い<br />
                         </p>
                         <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-light italic tracking-wide">
                           技術の先にある、人と企業の豊かな未来を共に<br />創造していきます。
