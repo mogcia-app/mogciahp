@@ -8,19 +8,15 @@ const HeroSection: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden"
       style={{ zIndex: 10 }}
     >
-      {/* Video Background */}
+      {/* Image Background */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="/images/istockphoto-2187782281-1024x1024.jpg"
+          alt="AI・デジタル技術で企業の未来を創造"
           className="w-full h-full object-cover"
-        >
-          <source src="/videos/istockphoto-2167033466-640_adpp_is.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Overlay for better text readability */}
-     
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       {/* Main Content - Bottom Right */}
