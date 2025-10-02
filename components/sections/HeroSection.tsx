@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     >
       {/* Image Background */}
       <div className="absolute inset-0 w-full h-full">
-        <AnimatedSection animation="fadeIn" delay={0}>
+        <AnimatedSection animation="fadeInUp" delay={0}>
           <img
             src="/images/iStock-2187782281.jpg"
             alt="AI・デジタル技術で企業の未来を創造"
