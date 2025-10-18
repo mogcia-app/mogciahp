@@ -17,16 +17,18 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   useEffect(() => {
     const startTime = Date.now()
     
-    // Typing animation
-    let typingIndex = 0
+    // Typing animation - time-based for perfect sync
     const typingInterval = setInterval(() => {
-      if (typingIndex < fullText.length) {
-        setTypingText(fullText.slice(0, typingIndex + 1))
-        typingIndex++
-      } else {
+      const elapsed = Date.now() - startTime
+      const typingProgress = Math.min(elapsed / totalDuration, 1)
+      const charactersToShow = Math.floor(typingProgress * fullText.length)
+      
+      setTypingText(fullText.slice(0, charactersToShow))
+      
+      if (typingProgress >= 1) {
         clearInterval(typingInterval)
       }
-    }, typingSpeed)
+    }, 16) // Same frequency as progress bar
     
     // Progress bar animation - synchronized with typing
     const progressInterval = setInterval(() => {
@@ -41,7 +43,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           onComplete()
         }, 500) // Small delay after completion
       }
-    }, 16) // ~60fps for smooth animation
+    }, 16) // Same frequency for perfect sync
     
     // Cursor blinking
     const cursorInterval = setInterval(() => {

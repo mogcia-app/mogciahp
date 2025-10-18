@@ -197,7 +197,7 @@ export default function MainServicesSection() {
                 <div className="order-2 lg:order-1">
                   <AnimatedSection animation="fadeInLeft" delay={200}>
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-gray-600 bg-gray-100 mb-4 inline-block">NEW</div>
-                    <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">Enterprise AI（社内専用ツール）</h3>
+                    <h3 className="text-xl sm:text-2xl font-medium text-gray-900 mb-4 tracking-wide">upmo（社内専用ツール）</h3>
                     <div className="text-xs font-medium px-2 py-1 mr-3 text-blue-600 bg-blue-100 mb-4 inline-block">COMING SOON</div>
                     <p className="text-sm text-gray-600 leading-relaxed font-light mb-4">
                       社内ドキュメント、規程、FAQ、議事録、顧客履歴など企業内のナレッジに最適化。<br />きめ細かな権限管理と監査ログを備え、提案書や報告書の下書き、契約書の観点チェック、社内FAQの即時回答を安全に実現します。
