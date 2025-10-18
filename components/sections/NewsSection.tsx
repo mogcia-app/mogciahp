@@ -19,14 +19,22 @@ export default function NewsSection() {
   const newsArticles: NewsArticle[] = [
     {
       id: '1',
-      title: '新サービス開発中',
-      date: '2025.09.15',
-      type: 'Coming soon',
-      content: '企業の業務効率化を支援するビジネス用AIツールの開発を<br />進めています。',
+      title: 'スケジュール管理アプリのテスト導入',
+      date: '2025.10.03',
+      type: 'NEWS',
+      content: '企業向け在庫管理・スケジュール共有ツールのテスト導入を開始しました',
       published: true,
     },
     {
       id: '2',
+      title: 'Upmoの開発を開始しました',
+      date: '2025.09.15',
+      type: 'Coming soon',
+      content: '企業の業務効率化を支援するUpmoの開発を<br />進めています。',
+      published: true,
+    },
+    {
+      id: '3',
       title: 'SNS運用支援ツールSignal.',
       date: '2025.06.01',
       type: 'NEWS',
@@ -34,7 +42,7 @@ export default function NewsSection() {
       published: true,
     },
     {
-      id: '3',
+      id: '4',
       title: 'MOGCIACoffee　POPUP',
       date: '2025.04.20',
       type: 'NEWS',

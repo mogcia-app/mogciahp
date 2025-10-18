@@ -11,10 +11,12 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [showCursor, setShowCursor] = useState(true)
   
   const fullText = 'MOGCIA'
-  const typingSpeed = 150 // ms per character
-  const progressDuration = 3500 // 3.5 seconds total
+  const totalDuration = 3000 // 3 seconds total for both animations
+  const typingSpeed = totalDuration / fullText.length // Calculate speed to finish typing at the same time as progress bar
   
   useEffect(() => {
+    const startTime = Date.now()
+    
     // Typing animation
     let typingIndex = 0
     const typingInterval = setInterval(() => {
@@ -26,19 +28,20 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       }
     }, typingSpeed)
     
-    // Progress bar animation
+    // Progress bar animation - synchronized with typing
     const progressInterval = setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) {
-          clearInterval(progressInterval)
-          setTimeout(() => {
-            onComplete()
-          }, 500) // Small delay after completion
-          return 100
-        }
-        return prev + (100 / (progressDuration / 50)) // Update every 50ms
-      })
-    }, 50)
+      const elapsed = Date.now() - startTime
+      const progressPercent = Math.min((elapsed / totalDuration) * 100, 100)
+      
+      setProgress(progressPercent)
+      
+      if (progressPercent >= 100) {
+        clearInterval(progressInterval)
+        setTimeout(() => {
+          onComplete()
+        }, 500) // Small delay after completion
+      }
+    }, 16) // ~60fps for smooth animation
     
     // Cursor blinking
     const cursorInterval = setInterval(() => {
